@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Raleway, sans-serif;
+  background-color: whitesmoke;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+/* Loading screen */
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* This line of code makes the loading icon center by it´s own axis relative to the whole page*/
+}
+
+/* Image container */
+.image-container {
+  margin: 40px 30%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5%;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+/* Media Query: Large Smartphone */
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .image-container {
+    margin: 15px;
+  }
+}
